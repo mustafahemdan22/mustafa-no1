@@ -1,0 +1,941 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+
+}
+
+/* ///////////////// START HOME SECTION ////////////////// */
+.home {
+    width: 100%;
+    background-image: url(../img/breathtaking-shot-sea-dark-purple-sky-filled-with-stars.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 18px 0;
+    padding: 14px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    top: 5px;
+    text-align: center;
+    z-index: 22;
+    background-color: #35155D;
+  
+}
+
+.nav .logo {
+    font-size: 25px;
+    font-weight: 600;
+    list-style: none;
+    float: left;
+    width: 20%;
+    transition: 0.3s;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: rgb(230, 225, 231);
+    transition: 0.5s;
+}
+
+.nav ul {
+    width: 40%;
+    transition: 0.5s;
+    float: left;
+    margin: 0px 50px;
+    width: 50%;
+}
+
+.nav ul li {
+    display: inline-block;
+    width: 90px;
+    list-style: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(230, 225, 231);
+    position: relative;
+    transition: 0.5s;
+    font-size: 20px;
+    color: rgb(230, 225, 231);
+}
+.aft{
+    position: relative;
+}
+
+.aft::after{
+    content: "Blog Post";
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+   
+    background-color: #6F34BA;
+    width: 0;
+    transition: 0.5s;
+   
+    overflow: hidden;
+    
+}
+.aft:hover::after{
+    width: 100%;
+   
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+
+.nav ul li a::after {
+    position: absolute;
+    content: "";
+
+    bottom: -20px;
+    left: 50%;
+   
+    width: 0px;
+    transition: 0.5s;
+    background-color: rgb(230, 225, 231);
+    height: 2px;
+
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+    transform: translate(-50%);
+}
+
+.nav .midea {
+    width: 20%;
+    float: right;
+    text-align: start;
+}
+
+.nav .midea a {
+    width: 50px;
+    height: 30px;
+    color: rgb(230, 225, 231);
+    margin-left: 5px;
+}
+
+
+.nav .midea a i {
+    width: 30px;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.rgba {
+    height: 100vh;
+    background-color: rgba(33, 14, 82, 0.7);
+    position: relative;
+
+}
+
+.rgba .creative {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    text-align: center;
+}
+
+.rgba h1 {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: rgb(230, 225, 231);
+    font-style: inherit;
+    margin: auto;
+    padding: 50PX;
+}
+
+.rgba P {
+    color: rgb(230, 225, 231);
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.btn1,
+.btn2 {
+    padding: 10px 10px;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: rgb(230, 225, 231);
+    margin-right: 50px;
+    border-radius: 20px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1 h3 {
+    position: relative;
+    z-index: 99;
+}
+
+.btn1:hover::after,
+.btn2:hover::after {
+    width: 100%;
+}
+
+.btn2 h3 {
+    position: relative;
+    z-index: 55555;
+}
+
+.btn2::after,
+.btn1::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    transition: 0.5s;
+    background-color: #35155D;
+
+}
+
+
+.btn2:hover,
+.btn1:hover {
+    color: #dee7dc;
+}
+
+.phone {
+    color: #6a4b92;
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    z-index: 100;
+
+}
+
+.phone-info i {
+    height: 30px;
+    display: block;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.phone-info i:hover {
+    font-size: 30px;
+    color: #6F34BA;
+}
+/* ///////////////// END HOME SECTION ////////////////// */
+
+/* ///////////////// START WELCOME SECTION ////////////////// */
+
+.welcome {
+    padding: 50px;
+    margin: auto;
+    transition: 0, 2s;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.item-content {
+    transition: 0, 3s;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.info-titl {
+
+    color: #35155D;
+    padding: 10px;
+}
+
+.item-content .titel {
+    color: #155d29;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    padding: 25px;
+}
+
+.item-content .titel {
+    padding-bottom: 25px;
+}
+
+.cards {
+    padding: 50px;
+}
+
+.item-content .titel::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+
+
+    height: 2px;
+    background-color: #35155D;
+    left: calc(50% - (250px / 2));
+    width: 100px;
+    margin: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.item-content .item-info {
+
+    text-align: center;
+    border-radius: 100px 100px;
+    transition: 0, 3s;
+    float: left;
+    width: 25%;
+    background-color: #35155D;
+}
+
+.item-info h3 {
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(230, 225, 231);
+
+}
+
+.item-info p {
+    color: rgb(230, 225, 231);
+
+}
+
+.item-info img {
+    width: 100%;
+    border-radius: 100px 0%;
+    transition: 0.5s;
+}
+
+.item-info img:hover {
+    border-radius: 0px 100px;
+}
+
+.center {
+    margin: 0px 12.5%;
+}
+/* ///////////////// END WELCOM SECTION ////////////////// */
+
+/* ///////////////// START SERVICES SECTION ////////////////// */
+
+.services .services-card {
+    width: 90%;
+    margin: auto;
+}
+
+.services .services-card .cards {
+    width: 20%;
+    border: 2px solid black;
+    height: 350px;
+}
+
+
+
+.staf-content {
+    color: aliceblue;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+}
+
+.staf-content h2 {
+    padding-top: 80px;
+    position: relative;
+    color: #35155D;
+}
+
+.staf-content h2::after {
+    content: "";
+    position: absolute;
+    background-color: #35155D;
+    height: 3px;
+    width: 480px;
+    right: 0;
+    bottom: 10px;
+}
+
+.staf-content h2::before {
+    content: "";
+    position: absolute;
+    background-color: #35155D;
+    height: 3px;
+    width: 480px;
+    left: 0;
+    bottom: 10px;
+}
+
+.staf-content p {
+    padding: 50px;
+    color: #35155D;
+
+}
+
+.card-hover {
+
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+.center-icon{
+    transition:0.5s;
+    font-size: 20px;
+}
+.center-icon :hover{
+    font-size: 40px;
+   
+   
+}
+.card-hover .center-h .center-icon a{
+    color: #dee7dc;
+    padding: 5px;
+    transition:0.5s;
+
+}
+
+.card-hover-big {
+    width: 20%;
+    height: 300px;
+    background-image: url(../img/staff-3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    float: left;
+    border-radius: 25px;
+}
+
+.card-hover-big1 {
+    width: 20%;
+    height: 300px;
+    background-image: url(../img/staff-1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    float: left;
+    border-radius: 25px;
+    transform: translate(100%);
+
+}
+
+.card-hover-big2 {
+    width: 20%;
+    height: 300px;
+    background-image: url(../img/staff-4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    float: right;
+    border-radius: 25px;
+}
+
+
+.card-hover-big .center-lear,
+.card-hover-big2 .center-lear,
+.card-hover-big1 .center-lear {
+    background-color: rgba(122, 6, 160, 0.7);
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    color: #f2eff4;
+    position: absolute;
+    transition: 0.5s;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15px;
+
+
+}
+
+.card-hover-big:hover .center-lear {
+    bottom: 5%;
+    overflow: hidden;
+
+
+}
+
+.center-h {
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+   
+    
+  
+}
+.center-h p{
+    margin: 40px;
+}
+
+.card-hover-big2:hover .center-lear {
+    bottom: 5%;
+    overflow: hidden;
+
+}
+.card-hover-big1:hover .center-lear {
+    bottom: 5%;
+    overflow: hidden;
+
+}
+/* ///////////////// END SERVICES SECTION ////////////////// */
+
+/* ///////////////// START ABOUT SECTION ////////////////// */
+.about {
+    margin: auto;
+    text-align: center;}
+
+.about h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-style: italic;
+    position: relative;
+    padding: 20px;
+    color: #35155D;
+    padding: 80px;
+
+}
+
+
+.about P {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    width: 60%;
+    margin: auto;
+    color: #35155D;
+
+}
+
+.about .cards {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about .card {
+    width: 280px;
+    height: 420px;
+    margin: 80px 40px;
+    position: relative;
+    border-radius: 8px;
+    padding: 8px 8px;
+}
+
+.about .card::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    color: #dee7dc;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about .cards .card:hover::after {
+    width: 100%;
+    height: 100%;
+
+}
+/* ///////////////// END ABOUT SECTION ////////////////// */
+.new-card {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    position: relative;
+    border-radius: 18px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.new-card .lear {
+    position: absolute;
+    background-color: #b777b7;
+    padding: 50px 40px;
+    border-radius: 20px;
+    inset: 4;
+    z-index: 2;
+    bottom: 4px;
+    top: 4px;
+    left: 5px;
+    right: 5px;
+    transition: 0.3s;
+
+}
+
+.container {
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    padding-bottom: 90px;
+
+}
+
+.container .card {
+    border: 1px solid rgb(184, 171, 171);
+    width: 30%;
+    float: left;
+    margin: 0px 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.container .card .cont-lier {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 15px;
+    color: #35155D;
+    ;
+    transition: 2s;
+    text-transform: capitalize;
+}
+
+.container .card .cont-lier:hover {
+    background-color: #665a72;
+    transform: scale(1.1);
+    color: #dee7dc;
+
+}
+
+
+.container .card::after {
+    content: "";
+    position: absolute;
+    background-color: #665a72;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.container .card::before {
+    content: "";
+    position: absolute;
+    background-color: #665a72;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.container .card:hover::after,
+.container .card:hover::before {
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+}
+
+.container .card i {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.card p {
+    padding: 50px;
+
+}
+
+.about .container .card a {
+    text-decoration: none;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+/* ///////////////// END ABOUT SECTION ////////////////// */
+
+
+/* ///////////////// START LOW  SECTION ////////////////// */
+
+.low {
+    background-image: url(../img/breathtaking-shot-sea-dark-purple-sky-filled-with-stars.jpg);
+    background-attachment: fixed;
+
+    margin: auto;
+}
+
+.low .low-lear {
+
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.low .low-lear .low-cont {
+    width: 80%;
+
+    display: inline-block;
+    margin: auto;
+    overflow: hidden;
+    color: #dadee0;
+    font-size: 35px;
+
+
+}
+
+.low .low-lear .low-cont .low-item {
+
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding: 90px;
+}
+
+.low .low-lear .low-cont .low-item h3 {
+    text-align: center;
+
+    padding: 20px;
+}
+/* ///////////////// END LOW  SECTION ////////////////// */
+
+
+
+/* ///////////////// CONTACT FORM SECTION ////////////////// */
+
+.Contact {
+    background-attachment: fixed;
+    background-image: url(../img/pexels-fabian-wiktor-994605.jpg);
+    margin: auto;
+    width: 100%;
+    height: 800px;
+
+}
+
+.Contact .over-lay {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.Contact .over-lay form {
+    border: 2px solid white;
+    width: 420px;
+    height: 510px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    color: white;
+    left: 50%;
+}
+
+.Contact .over-lay form i {
+    left: 50px;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.Contact .over-lay form h3 {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.Contact .over-lay form .inputBox {
+    padding: 20px;
+    color: white;
+    position: relative;
+    margin: 20px;
+}
+
+.Contact .over-lay form .inputBox input {
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.Contact .over-lay form .inputBox label {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%);
+}
+
+form .btn3 {
+    width: 100px;
+    padding: 10PX;
+    border-radius: 15PX;
+    color: #7030C1;
+    position: relative;
+    transition: 1s;
+    margin-bottom: 15px;
+
+
+}
+
+form span {
+    position: relative;
+    z-index: 111;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+form .btn3:hover {
+    color: white;
+
+
+}
+
+form .btn3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    
+  right: 100%;
+    background-color: #35155D;
+    width: 0;
+    height: 0;
+    border-radius: 15PX;
+    transition: 0.5s;
+}
+
+form .btn3:hover::after {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+form .forget a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+/* ///////////////// CONTACT FORM SECTION ////////////////// */
+
+
+
+/* /////////////////START BLOG SECTION ////////////////// */
+
+.blog-items {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+   
+}
+
+.blog-items .item {
+    width: 40%;
+    color: #35155D;
+    position: relative;
+    padding: 50px;
+    margin: 50px;
+    float: left;
+    transition: 0.8s;
+}
+.blog-items .item:hover{
+    background-color:#35155D;
+    border-radius: 200px;
+    color: white;
+   
+}
+
+.blog-items .item p {
+    padding: 15px;
+    letter-spacing: 0.7px;
+   }
+.blog-items .item .img img{
+    width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+.blog-items .item .item-cont{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+/* ///////////////// END BLOG SECTION ////////////////// */
+
+
+
+/* ///////////////// START FOOTER SECTION ////////////////// */
+.footer{
+    width: 100%;
+    margin: auto;
+    
+}
+.footer-items{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+
+    
+}
+.footer-items .item{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.footer-items .stars{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    bottom: 0;
+    bottom: -120px;
+
+}
+.footer-items .item h3{
+    font-size:2rem;
+    
+}
+.footer-items .item p{
+    font-size:1.2rem;
+    padding: 20px;
+   
+}
+.footer-items span{
+    position: absolute;
+    bottom:-150px ;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 10px;
+}
+/* ///////////////// END FOOTER SECTION ////////////////// */
+
